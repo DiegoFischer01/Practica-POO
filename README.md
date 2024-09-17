@@ -1,3 +1,4 @@
-# Practica-POO
+# Practica-POO / Import-Export
 
-Repo donde practicos POO.
+Repo donde practico POO.
+Tambien practico Import y Export.
