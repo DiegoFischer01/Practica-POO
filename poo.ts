@@ -28,6 +28,13 @@ class Persona {
         return this.Dni;
     }
 
+
+
+
+
+
+
+
     getAltura(): number | undefined {     //Prestar atencion a esta definicion number | (alt+124) undefined.  
         return this.Altura;
     }
@@ -43,6 +50,10 @@ class Persona {
 
 
 
+
+
+
+    
     //Metodos:
     Saludar(): void {
         console.log(`Hola, mi nombre es ${this.Nombre} ${this.Apellido}, y mi Dni es ${this.Dni}.`);
