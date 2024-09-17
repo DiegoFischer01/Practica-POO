@@ -58,3 +58,7 @@ class Persona {
 export const Persona1: Persona = new Persona("Joaquin", "Fernandez", 36500700, 174, 85);
 Persona1.Saludar(); 
 Persona1.Datoscompletos();
+
+const Persona2: Persona = new Persona("Diego", "Fischer",36572530);
+Persona2.Saludar();
+Persona2.Datoscompletos();
