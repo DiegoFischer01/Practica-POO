@@ -1,2 +1,3 @@
 # Practica-POO
-Repor donde practicos POO
+
+Repo donde practicos POO.
