@@ -1,7 +1,7 @@
 class Persona {
 
     //Propiedades:
-    private Nombre: string;
+    public Nombre: string;
     private Apellido: string;
     private Dni: number;
     private Altura?: number;
@@ -63,4 +63,7 @@ const Persona2: Persona = new Persona("Diego", "Fischer",36572530);
 Persona2.Saludar();
 Persona2.Datoscompletos();
 
-console.log(Persona2.getNombre); // en la salida me muestra [Fubction: getNombre]... y no entiendo por que. ¿No deberia mostrarme por consola el nombre?
+console.log(Persona2.getNombre); // en la salida me muestra [Fubction: getNombre]... y no entiendo por que. ¿No deberia mostrarme por consola el nombre? // Descubri que no me dejaba porque esta Privado.
+
+console.log(Persona2["Nombre"]); //Con esta sintaxis pude acceder al nombre.
+console.log(Persona2.Nombre);
