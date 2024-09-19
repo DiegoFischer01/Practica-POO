@@ -1,3 +1,5 @@
+import { error } from "console";
+
 class Persona {
 
     //Propiedades:
@@ -19,6 +21,21 @@ class Persona {
     public getNombre(): string {
         return this.Nombre;
     }
+
+    //Setter nombre:
+    // public setNombre(nuevoNombre:string){
+    //     return this.Nombre=nuevoNombre;
+    // }
+
+    //o validado un poco mejor seria:
+    public setNombre(nuevoNombre: string) {
+    if (nuevoNombre.length >= 2) {
+        this.Nombre = nuevoNombre;
+        } else {
+        throw new Error(`Ingrese un nombre con más letras.`);
+        }
+    }
+
 
     public getApellido(): string {
         return this.Apellido;
@@ -70,4 +87,7 @@ console.log(Persona2.getNombre()); // Asi se usa el get.
 // console.log(Persona2["Nombre"]); //Con esta sintaxis pude acceder al nombre.
 // console.log(Persona2.Nombre);
 
-
+Persona1.setNombre("Guille");
+console.log(Persona1.getNombre());
+Persona1.setNombre("mia");
+console.log(Persona1.getNombre());
