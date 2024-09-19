@@ -66,10 +66,14 @@ Persona2.Datoscompletos();
 console.log(Persona2.getNombre); // en la salida me muestra [Fubction: getNombre]... y no entiendo por que. ¿No deberia mostrarme por consola el nombre? // Descubri que no me dejaba porque esta Privado.
 
 
+// No andan los get / no entiendo por que.
+Persona2.getAltura();
+
+
+
 
 // Esto esta mal, son MALAS PRACTICAS.
-console.log(Persona2["Nombre"]); //Con esta sintaxis pude acceder al nombre.
-console.log(Persona2.Nombre);
+// console.log(Persona2["Nombre"]); //Con esta sintaxis pude acceder al nombre.
+// console.log(Persona2.Nombre);
 
 
-console.log(Persona1.Nombre);
