@@ -1,7 +1,7 @@
 class Persona {
 
     //Propiedades:
-    public Nombre: string;
+    private Nombre: string;
     private Apellido: string;
     private Dni: number;
     private Altura?: number;
@@ -63,13 +63,8 @@ const Persona2: Persona = new Persona("Diego", "Fischer",36572530);
 Persona2.Saludar();
 Persona2.Datoscompletos();
 
-console.log(Persona2.getNombre); // en la salida me muestra [Fubction: getNombre]... y no entiendo por que. ¿No deberia mostrarme por consola el nombre? // Descubri que no me dejaba porque esta Privado.
 
-
-// No andan los get / no entiendo por que.
-Persona2.getAltura();
-
-
+console.log(Persona2.getNombre()); // Asi se usa el get.
 
 
 // Esto esta mal, son MALAS PRACTICAS.
