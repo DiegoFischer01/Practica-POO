@@ -66,7 +66,7 @@ Persona2.Datoscompletos();
 console.log(Persona2.getNombre()); // Asi se usa el get.
 
 
-// Esto esta mal, son MALAS PRACTICAS.
+// Esto esta mal, son MALAS PRACTICAS. Por eso se pone PRIVATE, para que no puedan acceder de estas formas.
 // console.log(Persona2["Nombre"]); //Con esta sintaxis pude acceder al nombre.
 // console.log(Persona2.Nombre);
 
