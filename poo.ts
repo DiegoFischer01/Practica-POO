@@ -16,22 +16,21 @@ class Persona {
     }
 
     //Getter:
-    getNombre(): string {
+    public getNombre(): string {
         return this.Nombre;
     }
 
-    getApellido(): string {
+    public getApellido(): string {
         return this.Apellido;
     }
 
-    getDni(): number {
+    public getDni(): number {
         return this.Dni;
     }
 
 
-
-
-    getAltura(): number | undefined {     //Prestar atencion a esta definicion number | (alt+124) undefined.  
+    /********************************************************************************************************************* */
+    public getAltura(): number | undefined {     //Prestar atencion a esta definicion number | (alt+124) undefined.  
         return this.Altura;
     }
 
@@ -39,12 +38,12 @@ class Persona {
     // number: Si la propiedad Altura ha sido asignada un valor numérico, el método devolverá ese valor.
     // undefined: Si la propiedad Altura no ha sido asignada (es decir, es opcional y no se le ha dado un valor), el método devolverá undefined.
 
-    getPeso(): number | undefined {     //Prestar atencion a esta definicion number | (alt+124) undefined.  
+    public getPeso(): number | undefined {     //Prestar atencion a esta definicion number | (alt+124) undefined.  
         return this.Peso;
     }
+    /* **************************************************************************************************************** */
 
-
-
+    
     //Metodos:
     Saludar(): void {
         console.log(`Hola, mi nombre es ${this.Nombre} ${this.Apellido}, y mi Dni es ${this.Dni}.`);
