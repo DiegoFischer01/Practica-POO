@@ -90,3 +90,4 @@ Persona1.setNombre("Guille");
 console.log(Persona1.getNombre());
 Persona1.setNombre("mia");
 console.log(Persona1.getNombre());
+Persona1.Datoscompletos();
